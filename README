@@ -1,14 +1,14 @@
 This repo is to provide the processed geuvadis dataset to replicate results in Wang, L. & Michoel, T. Efficient and accurate causal inference with hidden confounders from genome-transcriptome variation data. PLOS Computational Biology 13, e1005703 (2017). DOI: 10.1371/journal.pcbi.1005703
 
 Data files:
-dt1.csv.gz & dt2.csv.gz: Two parts of mRNA expression. Due to upload size limit, please concatenate them before uncompressing.
+dt1.csv.gz & dt2.csv.gz: Two parts of mRNA expression. Due to upload size limit, please concatenate them before decompressing.
 dm.csv.gz: miRNA expression.
 dgt.csv.gz: Genotype values for mRNAs. Each genotype is the best (& significant) cis-eQTL of the mRNA in the same row in dt(1+2).csv.gz. mRNAs without a corresponding genotype doesn't have a significant eQTL.
 dgm.csv.gz: Genotype values for miRNAs. Each genotype is the best (& significant) cis-eQTL of the miRNA in the same row in dm.csv.gz. miRNAs without a corresponding genotype doesn't have a significant eQTL.
 
 Gold standards:
 gold/mirlab.csv: miRNA target gold standard from miRLAB. Downloaded from https://downloads.sourceforge.net/project/mirlab/groundtruth_Strong.csv.
-gold/tf.csv: siRNA silencing target gold standard.
+gold/sirna.csv: siRNA silencing target gold standard.
 gold/encode.tsv: TF target gold standard from ENCODE. Downloaded from http://encodenets.gersteinlab.org/enets2.Proximal_filtered.txt.
 For references, please see publication.
 
